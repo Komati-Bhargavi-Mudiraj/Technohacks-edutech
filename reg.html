@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Registration System</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Registration System</h1>
+    <h2>Available Courses</h2>
+    <div id="course-list"></div>
+
+    <h2>Student Registration</h2>
+    <div>
+        <label for="student-id">Student ID:</label>
+        <input type="text" id="student-id">
+        <label for="student-name">Name:</label>
+        <input type="text" id="student-name">
+        <button onclick="registerStudent()">Register</button>
+    </div>
+
+    <h2>Student Course Registration</h2>
+    <div>
+        <label for="reg-student-id">Student ID:</label>
+        <input type="text" id="reg-student-id">
+        <label for="course-code">Course Code:</label>
+        <input type="text" id="course-code">
+        <button onclick="registerForCourse()">Register for Course</button>
+    </div>
+
+    <h2>Drop Course</h2>
+    <div>
+        <label for="drop-student-id">Student ID:</label>
+        <input type="text" id="drop-student-id">
+        <label for="drop-course-code">Course Code:</label>
+        <input type="text" id="drop-course-code">
+        <button onclick="dropCourse()">Drop Course</button>
+    </div>
+
+    <h2>Student Information</h2>
+    <div id="student-info"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
